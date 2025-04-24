@@ -53,8 +53,20 @@ ssize_t recvfrom(int sockfd, void* buff, size_t nbytes,int flags, struct sockadd
 ssize_t sendto(int sockfd, const void *buff, size_t nbytes,int flags, const struct sockaddr *to, socklen_t addrlen);
 ```
 
+## Run locally
 
+1. Clone the repository
+```bash
+git clone https://github.com/waquas9248/Socket-Networking.git
+cd Socket-Networking
+```
 
+2. Compile a program
+```bash
+gcc tcp_echo_server.c -o tcp_echo_server
+```
 
-
-
+3. Run the compiled program:
+```bash
+./tcp_echo_server
+```
