@@ -24,7 +24,7 @@ main(int argc,char* argv[])
 	}
 	s.sin_family=AF_INET;
 	s.sin_addr.s_addr=inet_addr(argv[1]);
-s.sin_port=htons(atoi(argv[2]));
+	s.sin_port=htons(atoi(argv[2]));
 	
 	printf("\nEnter the request message : ");
 	scanf("%s",m1);
