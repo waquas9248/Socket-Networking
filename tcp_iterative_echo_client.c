@@ -22,7 +22,7 @@ main(int argc,char* argv[])
 		exit(0);
 	}
 	s.sin_family=AF_INET;
-  s.sin_addr.s_addr=inet_addr(argv[1]);
+  	s.sin_addr.s_addr=inet_addr(argv[1]);
 	s.sin_port=htons(atoi(argv[2]));
 	rval=connect(sockid,(struct sockaddr*)&s, sizeof(s));
 	if(rval==-1)
