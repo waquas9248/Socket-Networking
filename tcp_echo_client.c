@@ -6,7 +6,7 @@
 
 main(int argc,char* argv[])
 {
-struct sockaddr_in s;
+	struct sockaddr_in s;
 	int sockid,rval;
 	char m1[20],m2[20];
 	sockid=socket(AF_INET,SOCK_STREAM,0);
@@ -24,7 +24,7 @@ struct sockaddr_in s;
 	}
 	s.sin_family=AF_INET;
 	s.sin_addr.s_addr=inet_addr(argv[1]);
-s.sin_port=htons(atoi(argv[2]));
+	s.sin_port=htons(atoi(argv[2]));
 	rval=connect(sockid,(struct sockaddr*)&s, sizeof(s));
 	if(rval==-1)
 	{
