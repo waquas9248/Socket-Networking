@@ -3,6 +3,7 @@
 #include<sys/types.h>
 #include<sys/socket.h>
 #include<netinet/in.h>
+
 main(int argc,char* argv[])
 {
 	int sockid,rval;
@@ -22,7 +23,7 @@ main(int argc,char* argv[])
 	}
 	s.sin_family=AF_INET;
 	s.sin_addr.s_addr=inet_addr(argv[1]);
-s.sin_port=htons(atoi(argv[2]));
+	s.sin_port=htons(atoi(argv[2]));
 	rval=connect(sockid,(struct sockaddr*)&s, sizeof(s));
 	if(rval==-1)
 	{
