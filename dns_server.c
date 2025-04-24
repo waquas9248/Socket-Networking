@@ -1,11 +1,11 @@
 /* Naive */
-
 #include<stdio.h>
 #include<stdlib.h>
 #include<sys/types.h>
 #include<sys/socket.h>
 #include<netinet/in.h>
 #include<string.h>
+
 main(int argc,char* argv[])
 {
 	struct sockaddr_in dnss,dnsc;
